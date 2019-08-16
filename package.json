@@ -1,9 +1,9 @@
 {
 	"name": "@sex-pomelo/sex-pomelo-scheduler",
-	"version": "0.4.3",
+	"version": "0.4.4",
 	"main": "./lib/schedule",
 	"author": "XiaogangZhang <zhang0925@gmail.com>, fantasyni <fantasyni@163.com>, shudingbo <shudingbo@qq.com>",
 	"dependencies": {
-		"log4js": "5.0.0"
+		"@sex-pomelo/sex-pomelo-logger": "^0.1.10"
 	}
 }
