@@ -1,4 +1,4 @@
-var cronTrigger = require('../lib/cronTrigger');
+var cronTriggerTT = require('../lib/cronTrigger');
 
 var SECOND = 0;
 var MIN = 1;
@@ -6,6 +6,8 @@ var HOUR = 2;
 var DOM = 3;
 var MONTH = 4;
 var DOW = 5;
+
+let cronTrigger = cronTriggerTT.createTrigger("0/10 * * * * *",()=>{console.log('---test');});
 
 function decoderTest(){
   var result = [];
@@ -29,7 +31,7 @@ function nextTimeTest(count){
  var r1, r2;
  var start = Date.now();
  for(var i = 0; i < count; i++)
-   r1 = cronTrigger.nextTime(value, timer);
+   r1 = cronTrigger.nextTime;
  var end = Date.now();
  
  console.log("first run time : " + (end-start));

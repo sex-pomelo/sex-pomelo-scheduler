@@ -1,1 +1,11 @@
+.project
+logs/
+config/
+node_modules/*
+.settings/
+**/*.svn
+*.svn
+*.sublime-project
+*.sublime-workspace
+package-lock.json
 .vscode/launch.json
